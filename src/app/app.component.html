@@ -1,0 +1,129 @@
+<nav id="mainNav">
+  <div>
+    <div class="logoDiv">
+      <img width="75px" height="75px" class="logo" src="/src/ZTM1.png" alt="">
+    </div>
+
+    <div class="options">
+      <ul>
+        <li> <a routerLink="/home" routerLinkActive="active"> Bosh sahifa </a> </li>
+        <li> <a routerLink="/aboutUs" routerLinkActive="active">Biz haqimizda ma'lumot </a> </li>
+        <li> <a routerLink="/settings" routerLinkActive="active"> Sozlamalar</a> </li>
+        <li> <a routerLink="/contactUs" routerLinkActive="active"> Bog'laniz </a> </li>
+      </ul>
+    </div>
+    <img (click)="bosildi0()" id="indicator" class="indicator" width="50px" height="50px"
+      src="https://img.icons8.com/external-others-inmotus-design/67/000000/external-Bottom-basic-web-ui-elements-others-inmotus-design.png"
+      alt="external-Bottom-basic-web-ui-elements-others-inmotus-design" />
+  </div>
+</nav>
+
+
+
+
+
+<div class="container">
+  <div id="boxFirst" (click)="bosildi()" class="boxFirst">
+    <img class="icon" width="40px" height="40px" src="https://img.icons8.com/ios-filled/50/user-male-circle.png"
+      alt="user-male-circle" />
+    <img width="30px" height="30px" class="profileImg" src="" alt="">
+
+    <div class="username">
+      <p>Username</p>
+
+      <h3>Muhammadabdullo</h3>
+
+    </div>
+
+
+
+  </div>
+  <br>
+
+  <div id="boxSecond" (click)="bosildi2()" class="boxSecond">
+    <img width="40px" height="40px" src="https://img.icons8.com/ios-filled/50/enter-2.png" alt="enter-2" />
+    <h4 routerLink="/settings"> Log in</h4>
+    <h4 routerLink="/settings" class="Registertion"> Registertion</h4>
+  </div>
+  <br>
+
+  <div id="boxThird" (click)="bosildi3()" class="boxThird">
+    <img width="40px" height="40px" src="https://img.icons8.com/ios-filled/50/open-pane.png" alt="open-pane" />
+    <h2 routerLink="/settings">Log out</h2>
+  </div>
+
+
+</div>
+
+<!-- ========================navbar================= -->
+
+
+
+
+
+
+
+<router-outlet></router-outlet>
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- ==================footer================== -->
+<footer>
+  <br>
+  <div class="footer-text">
+
+    <div [style.height]="minHeight" class="sort">
+      <h3> <button (click)="bilibolish()" class="animated-button">
+          <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+            </path>
+          </svg>
+          <span class="text">Ko'proq bilib olish ...</span>
+          <span class="circle"></span>
+          <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+            </path>
+          </svg>
+        </button>
+        <br>
+
+        Agarda siz IT sohasida o'qishni boshlamoqchi bo'lsangiz hoziroq <br> shu 👇 tugma ni bosing <br>
+        <button id="rasm" (click)="openModal()" class="hozirdan">
+          <span>hozirdan boshlang </span>
+          <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+            <path
+              d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+              fill="black"></path>
+          </svg>
+        </button>
+
+
+        <div id="modal" class="modal" [style.display]="modalVisible ? 'block' : 'none'">
+          <span class="close" (click)="closeModal()">&times;</span>
+          <p class="modal-content">Agar IT sohasini o'rganmoqchi bo'lsangiz shu inson bilan bog'laning 👉 <br> <a
+              href="http://t.me/+998910713471">Sardorbek</a> </p>
+        </div>
+
+
+
+
+      </h3>
+
+    </div>
+
+
+  </div>
+  <br><br><br>
+  <h3 class="creator">Copyright ©2024 Barcha huqular himoyalangan | ushbu sayt Muhammadabdullo tomonidan yaratilgan</h3>
+</footer>

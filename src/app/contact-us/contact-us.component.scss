@@ -1,0 +1,220 @@
+
+.container{
+
+position: relative;
+left: 100px;
+    width: 90%;
+    height: 700px;
+    box-shadow: 8px 9px 24px -12px rgba(66, 68, 90, 1);
+    border: 1px solid black;
+    background-color:#D7EBF7;
+    border-radius: 10px;
+
+    .DivMap{
+
+        
+        margin-left: 150px;
+        margin-top:100px;
+
+
+        
+    }
+
+    .containerText{
+        width: 400px;
+
+        
+        h3{
+            
+            border-bottom: solid  rgb(75, 142, 235);
+            border-top: none;
+            border-left: none;
+            border-right: none;
+     
+            display: inline;
+        }
+        position: relative;
+        left: 1100px;
+        bottom: 300px;
+
+
+        .share{
+        
+
+            .buttons {
+                position: relative;
+                display: grid;
+                place-items: center;
+                height: fit-content;
+                width: fit-content;
+                transition: 0.3s;
+                border-radius: 50%;
+            }
+            
+            .buttons:hover {
+                
+            }
+            
+            .buttons:hover .button {
+                box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+            }
+            
+            .main-button {
+                position: relative;
+                display: grid;
+                place-items: center;
+                padding: 10px;
+                border: none;
+                background: #e8e8e8;
+                box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+                border-radius: 50%;
+                transition: 0.2s;
+                z-index: 100;
+                left: 25px;
+                top: 50px;
+            }
+            
+            .button {
+                position: absolute;
+                display: grid;
+                place-items: center;
+                padding: 10px;
+                border: none;
+                background: #e8e8e8;
+                box-shadow: 5px 5px 12px rgba(202, 202, 202, 0), -5px -5px 12px rgba(255, 255, 255, 0);
+                transition: 0.3s;
+                border-radius: 50%;
+            }
+            
+            .discord-button:hover {
+                background: #5865F2;
+            }
+            
+            .buttons:hover .discord-button {
+                translate: 70px 0px;
+                box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+            }
+            
+            .twitter-button:hover {
+                background: #1CA1F1;
+            }
+            
+            .buttons:hover .twitter-button {
+                translate: 47px -47px;
+                box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+            }
+            
+            .reddit-button:hover {
+                background: #FF4500;
+            }
+            
+            .buttons:hover .reddit-button {
+                translate: 0px -70px;
+                box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+            }
+            
+            .messenger-button:hover {
+                background: #0093FF;
+            }
+            
+            .buttons:hover .messenger-button {
+                translate: -47px -47px;
+                box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+            }
+            
+            .pinterest-button:hover {
+                background: #F0002A;
+            }
+            
+            .buttons:hover .pinterest-button {
+                translate: -70px 0px;
+                box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+            }
+            
+            .instagram-button:hover {
+                background: #F914AF;
+            }
+            
+            .buttons:hover .instagram-button {
+                translate: -47px 47px;
+                box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+            }
+            
+            .snapchat-button:hover {
+                background: #FFFC00;
+            }
+            
+            .buttons:hover .snapchat-button {
+                translate: 0px 70px;
+                box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+            }
+            
+            .whatsapp-button:hover {
+                background: #25D366;
+            }
+            
+            .buttons:hover .whatsapp-button {
+                translate: 47px 47px;
+                box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+            }     
+        }
+    }
+
+   
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    .container{
+    position: relative;
+    left: 30px;
+    height: 1100px;
+
+    .DivMap{
+        position: relative;
+        right: 100px;
+    }
+
+
+    .containerText{
+        position: relative;
+        left:100px ;
+        top: 100px;
+    }
+
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    .container{
+        position: relative;
+        left: 30px;
+        height: 1100px;
+    
+        .DivMap{
+            position: relative;
+            right: 140px;
+      
+            iframe{
+                width: 410px;
+            }
+        }
+    
+    
+        .containerText{
+            position: relative;
+            left:20px ;
+            top: 100px;
+
+            .share{
+                position: relative;
+                left: 50px;
+            }
+
+        }
+    
+        }
+
+}

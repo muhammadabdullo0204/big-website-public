@@ -1,0 +1,178 @@
+<br><br><br><br><br><br>
+<div class="setting">
+   <div class="settingMenu"> 
+    
+    <div class="settingMenuText">
+        <p class="lastName"> <img width="20px" height="20px" src="https://img.icons8.com/ios/50/name--v1.png" alt="name--v1"/>Last Name: {{ lastName}}</p>
+        <h1 class="FirstName"> <img width="30px" height="30px" src="https://img.icons8.com/ios/50/name--v1.png" alt="name--v1"/> First Name: {{ firstName }}</h1>
+    
+    
+
+    </div>
+
+    <div class="settingMenuText2">
+        <p class="Address"> <img width="20px" height="20px" src="https://img.icons8.com/ios/50/address--v1.png" alt="address--v1"/> Address:{{ address }} .  </p>
+        <p class="Age"> <img width="20px" height="20px" src="https://img.icons8.com/ios/50/age.png" alt="age"/>Data of birth:{{ dateOfBirth }}  .  </p>
+        <p class="Number"> <img width="20px" height="20px" src="https://img.icons8.com/ios/50/phone--v1.png" alt="phone--v1"/>Number:{{ phone}}  .  </p>
+        <p class="Email"><img width="20px" height="20px" src="https://img.icons8.com/ios/50/new-post--v1.png" alt="new-post--v1"/> Email:{{ email }} </p>
+        <p class="PAssword"> <img width="20px" height="20px" src="https://img.icons8.com/ios/50/password--v1.png" alt="password--v1"/>Password: {{ password }}</p>
+
+    </div>
+    
+
+
+    <div class="settingMenuImg">
+        <img width="150px" height="100px" src="" alt="">
+
+
+    </div>
+</div>
+
+</div>
+
+<br><br><br><br>
+<div class="ContainerSetting">
+
+    <div class="settingImage">
+        <br>
+        <img height="100px" width="100px" src="" alt="">
+    </div>
+    <img class="edit" width="30px" height="30px" src="https://img.icons8.com/ios/50/create-new.png" alt="create-new"/>
+<br><br><br>
+    <div class="settingtext">
+        <form [formGroup]="myForm" (ngSubmit)="onsubmit()" novalidate>
+
+
+            <div class="MiniContainer">
+    
+                    <div class="mb-3"> 
+                    
+                        <input minlength="6" maxlength="25"  class="form-control" formControlName="name" id="name" type="text" name="name" required >
+                    
+    
+    
+                        <div  class="invalid" role="alert" *ngIf="myForm.get('name')?.invalid && myForm.get('name')?.touched">
+                            Ismingizni kiriting!</div>
+    
+    
+    
+                        <div  class="invalid1" *ngIf="!myForm.get('name')?.invalid && myForm.get('name')?.touched">
+                        ismingiz 3 ta harfdan 16 ta harfgacha bo'lishi kerak   !</div>
+    
+    
+    
+                    </div>
+    
+                    <div class="mb-3"> 
+                    
+                        <input minlength="6" maxlength="25"   class="form-control" formControlName="name1" id="name1" type="text" name="name1" required >
+                    
+    
+                        <div class="invalid" role="alert" *ngIf="myForm.get('name1')?.invalid && myForm.get('name1')?.touched">
+                            Familyangizni kiriting  !</div>
+    
+                        <div class="invalid1" *ngIf="!myForm.get('name1')?.invalid && myForm.get('name1')?.touched">
+                            Familyangizni kiriting 3 ta harfdan 16 ta harfgacha bo'lishi kerak  !</div>
+    
+                    </div>
+
+                      
+    
+            <div class="mb-3"> 
+                    
+                <input  minlength="6" maxlength="35"  class="form-control" formControlName="email" id="email" type="email" name="email" required >
+            
+    
+    
+                <div class="invalid" role="alert"*ngIf="myForm.get('email')?.invalid && myForm.get('email')?.touched">
+                    Emailingizni kiriting  ! </div>
+    
+    
+                <div class="invalid1"role="alert"*ngIf="!myForm.get('email')?.invalid && myForm.get('email')?.touched">
+                Bu yerda shu "&#64;"  va   emailingiz 16 ta harfgacha bo'lishi kerak ! </div>
+    
+            </div>
+    
+    
+            <div class="mb-3"> 
+                    
+                <input  placeholder="Password"  minlength="5" maxlength="15"  class="form-control" formControlName="password" id="password" type="password" name="password" required >
+             
+    
+                <div class="invalid" role="alert" *ngIf="myForm.get('password')?.invalid && myForm.get('password')?.touched">
+                    Kalit so'zini kiriting ! </div>
+        
+                <div class="invalid1" role="alert" *ngIf="!myForm.get('password')?.invalid && myForm.get('password')?.touched">
+                Kalit so'zi 6 tadan 15 harf va son bo'lishi kerak  ! </div>
+    
+            </div>
+
+            <div class="mb-3"> 
+                    
+                <input placeholder="Manzilingizni kiriting"   minlength="5" maxlength="35"  class="form-control" formControlName="address" id="address" type="address" name="address" required >
+             
+    
+                <div class="invalid" role="alert" *ngIf="myForm.get('address')?.invalid && myForm.get('address')?.touched">
+                    Manzilingizni kiriting! </div>
+        
+                <div class="invalid1" role="alert" *ngIf="!myForm.get('address')?.invalid && myForm.get('address')?.touched">
+               Manzilingiz 5 ta va 15 ta harfdan iborat bo'lishi kerak ! </div>
+    
+            </div>
+
+            <div class="mb-3"> 
+                    
+                <input placeholder="Telefon raqamingizni kiriting"   minlength="9" maxlength="15"  class="form-control" formControlName="phone" id="phone" type="number" name="phone" required >
+             
+    
+                <div class="invalid" role="alert" *ngIf="myForm.get('phone')?.invalid && myForm.get('phone')?.touched">
+                    Telefon raqamingizni kiriting! </div>
+        
+                <div class="invalid1" role="alert" *ngIf="!myForm.get('phone')?.invalid && myForm.get('phone')?.touched">
+                    Telefon raqamingiz 9 tadan kam bo'lmasligi kerak! </div>
+    
+            </div>
+    
+
+            <div class="mb-3"> 
+                <input  class="form-control" formControlName="dateOfBirth" id="dateOfBirth" type="date" name="dateOfBirth" required>
+                <div class="invalid" role="alert" *ngIf="myForm.get('dateOfBirth')?.invalid && myForm.get('dateOfBirth')?.touched">
+                  Tug'ulgan sanayizni kiriting!
+                </div>
+              </div>
+
+
+            </div>
+    
+  
+            
+    
+        
+                    
+            
+    
+               
+    
+         
+                
+
+    
+    
+    
+     
+            <input id="termsCheckbox" type="checkbox" required>&nbsp;
+            
+            <label for="termsCheckbox" > I accept the Terms of Use & Privacy Policy</label>
+            <div  class="invalid" role="alert" *ngIf="!myForm.get('checkbox')?.invalid && myForm.get('checkbox')?.touched">
+                should check it  ! </div>
+    
+    
+            
+    
+            <br><br>
+            <input (click)="displayMessage()" class="btn btn-danger" value="Register Now" type="submit" [disabled]="myForm.invalid">
+    
+        </form><br>
+    </div>
+</div>
+

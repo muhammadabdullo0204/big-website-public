@@ -1,0 +1,242 @@
+@import './bootstrap-4.5.3-dist/css/bootstrap.min.css';
+
+.setting{
+    
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color:#D7EBF7;
+border: 1px solid black;
+border-radius: 10px;
+margin-top: 50px;
+margin-left: 100px;
+width: 90%;
+height: 300px;
+box-shadow: 8px 9px 24px -12px rgba(66, 68, 90, 1);
+
+
+    .settingMenu{
+
+
+
+
+        .settingMenuText{
+
+            transform: translateX(30px)
+            translateY(10px);
+            
+         
+        }
+        .settingMenuText2{
+
+            transform: translateX(30px)
+            translateY(10px);
+         
+        }
+
+        .settingMenuImg{
+
+            transform: translateX(75%)
+            translateY(-165px);
+        }
+    }
+}
+
+
+.ContainerSetting{
+    background-color:#D7EBF7;
+    transform: translateX(500px);
+    height: 900px;
+    width: 1000px;
+    box-shadow: 8px 9px 24px -12px rgba(66, 68, 90, 1);
+
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+
+    .settingtext{
+    form{
+        .MiniContainer{
+
+            .mb-3{
+            position: relative;
+            left: 100px;
+
+            div{
+                position: relative;
+                left: 0px;
+            }
+                input{
+                    border: 1px solid  rgb(75, 142, 235);
+                    border-radius: 10px;
+                    width: 750px;
+                }
+
+               #password{
+                    border: 1px solid  rgb(75, 142, 235);
+                    border-radius: 10px;
+                    width: 750px;
+                }
+                #email{
+                    border: 1px solid  rgb(75, 142, 235);
+                    border-radius: 10px;
+                    width: 750px;
+                }
+            }
+        }
+    }
+
+    
+        
+    
+      
+    
+    
+    
+  
+    
+    
+
+    
+    .invalid{
+        background-color: #ffcccc; // Light red background color
+        border: 1px solid red; // Red border for emphasis
+        width: fit-content; // Adjust width to fit content
+        padding: 5px; // Add padding for spacing
+        width: 750px;
+        border-radius: 10px;
+        position: relative;
+        left: 100px;
+          }
+              
+    .invalid1{
+        background-color: rgb(75, 142, 235); // Light red background color
+        border: 1px solid rgb(75, 142, 235) ; // Red border for emphasis
+        width: fit-content; // Adjust width to fit content
+        padding: 5px; // Add padding for spacing
+        width: 750px;
+        color: #fff;
+        border-radius: 10px;
+        position: relative;
+        left: 100px;
+          }
+}
+
+
+    .edit{
+        position: relative;
+        left: 300px;
+        cursor: pointer;
+    }
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+
+    .setting{
+        position: relative;
+        right: 60px;
+    }
+
+    .ContainerSetting{
+        position: relative;
+        right: 490px;
+        width: 740px;
+        overflow: hidden;
+
+        .settingtext{
+            form{
+
+                .MiniContainer{
+
+                    
+                    .mb-3{
+                        width: 600px;
+
+                        .password{
+                            width: 600px;
+                        }
+
+                        #email{
+                            width: 600px;
+                        }
+
+
+                        input{
+                            width: 600px;
+                        }
+                        div{
+                            width: 600px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+  
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+
+
+    .setting{
+        position: relative;
+        right: 90px;
+        width: 460px;
+
+        .settingMenuImg{
+            position: relative;
+            right: 20px;
+        }
+
+    }
+
+    .ContainerSetting{
+        position: relative;
+        right: 490px;
+        width: 460px;
+        overflow: hidden;
+
+
+        .edit{
+            position: relative;
+            left: 150px;
+        }
+        .settingtext{
+
+            form{
+
+         
+                .MiniContainer{
+                    position: relative;
+                    right: 90px;
+                    width: 445px;
+                    
+                    .mb-3{
+                        width: 445px;
+                      
+
+                        .password{
+                            width: 455px;
+                        }
+
+                        #email{
+                            width: 455px;
+                        }
+
+
+                        input{
+                            width: 455px;
+                        }
+                        div{
+                            width: 455px;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
